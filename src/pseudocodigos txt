@@ -1,0 +1,27 @@
+function busquedaBinaria(arr, objetivo) {
+    izquierda = 0
+    derecha = length(arr) - 1
+
+    while (izquierda <= derecha) {
+        medio = (izquierda + derecha) / 2
+
+        if (arr[medio] == objetivo) {
+            return medio
+        } else if (arr[medio] < objetivo) {
+            izquierda = medio + 1
+        } else {
+            derecha = medio - 1
+        }
+    }
+
+    return -1
+}
+
+
+function busquedaSecuencial(arr, objetivo) {
+    for i = 0 to length(arr) - 1
+        if arr[i] == objetivo
+            return i
+
+    return -1
+}
